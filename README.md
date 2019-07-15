@@ -10,6 +10,8 @@ UPS Pays you $17 an hour.
 FedEx Pays you \$27 an hour.
 You only work between 9am and 5pm.
 
+<img width="696" alt="Screen Shot 2019-07-15 at 3 53 28 PM" src="https://user-images.githubusercontent.com/44379703/61249628-58f64180-a71b-11e9-85da-b5f0eedb7220.png">
+
 ## Setup
 Please complete the following steps to run the code locally.
 
