@@ -18,7 +18,7 @@ Please complete the following steps to run the code locally.
 1. Clone the repo to your local machine. 
 2. ```cd``` into the `delivery-driver` repo.
 3. Open `delivery-driver` folder in your IDE. The code for the React app is in the `delivery-driver-kata` folder.
-4. To install the Run the dependencies ```cd``` into the `deliver-driver-kata folder` in your terminal and run the ```npm install``` command.
+4. To install the dependencies ```cd``` into the `deliver-driver-kata folder` in your terminal and run the ```npm install``` command.
 5. Once you have done this you can run the ```npm start``` command in the terminal and view the app in your local browser at http://localhost:3000/
 
 **Technlogies Used:**
