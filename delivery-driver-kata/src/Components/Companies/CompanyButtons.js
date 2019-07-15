@@ -11,6 +11,7 @@ const companyButtons = props => {
         return (
           <label key={index}>
             <input
+              data-testid="company-input"
               className="companies"
               type="radio"
               value={company}
