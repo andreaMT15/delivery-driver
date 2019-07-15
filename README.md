@@ -15,10 +15,10 @@ You only work between 9am and 5pm.
 ## Setup
 Please complete the following steps to run the code locally.
 
-1. clone the repo to your local machine
-2. cd into delivery-driver-kata
-3. run the npm install command in your terminal
-4. open delivery-driver-kata in your IDE
+1. Clone the repo to your local machine. 
+2. ```cd``` into the delivery-driver repo
+3. Run the ```npm install``` command in your terminal
+4. Open delivery-driver-kata in your IDE
 
 **Technlogies Used:**
 
