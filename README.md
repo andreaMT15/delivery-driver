@@ -1,6 +1,6 @@
 # Delivery Driver Kata
 
-###Developer: Andrea Minhas
+### Developer: Andrea Minhas
 
 The Scenario for this application is that you are a delivery driver and you would like to calculate how much money you will earn for working deliveries in a day.
 You deliver for Amazon, UPS, and FedEx.
@@ -10,7 +10,7 @@ UPS Pays you $17 an hour.
 FedEx Pays you \$27 an hour.
 You only work between 9am and 5pm.
 
-##Setup
+## Setup
 Please complete the following steps to run the code locally.
 
 1. clone the repo to your local machine
