@@ -1,30 +1,29 @@
 import React from 'react';
+import './CompanyButtons.css';
 
-class companyButtons extends React.Component {
-  render() {
-    const { selectedCompany } = this.props;
-    const { handleChange } = this.props;
-    const companies = ['Amazon', 'UPS', 'FedEx'];
+const companyButtons = props => {
+  const { selectedCompany, handleChange } = props;
+  const companies = ['Amazon', 'UPS', 'FedEx'];
 
-    return (
-      <div className="companies">
-        {companies.map((company, index) => {
-          return (
-            <label key={index}>
-              <input
-                type="radio"
-                value={company}
-                name="selectedCompany"
-                onChange={handleChange}
-                checked={selectedCompany === company}
-              />
-              {company}
-            </label>
-          );
-        })}
-      </div>
-    );
-  }
-}
+  return (
+    <div className="companyWrapper">
+      {companies.map((company, index) => {
+        return (
+          <label key={index}>
+            <input
+              className="companies"
+              type="radio"
+              value={company}
+              name="selectedCompany"
+              onChange={handleChange}
+              checked={selectedCompany === company}
+            />
+            {company}
+          </label>
+        );
+      })}
+    </div>
+  );
+};
 
 export default companyButtons;

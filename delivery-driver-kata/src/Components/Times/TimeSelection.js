@@ -1,4 +1,5 @@
 import React from 'react';
+import './TimeSelection.css';
 
 const timeSelection = props => {
   const { startTime } = props;
@@ -23,8 +24,8 @@ const timeSelection = props => {
 
   return (
     <div>
-      <label>Start Time</label>
-      <select name="startTime" value={startTime} onChange={props.handleChange}>
+      <h3>Start Time</h3>
+      <select className="times" name="startTime" value={startTime} onChange={props.handleChange}>
         {startHours.map((hour, index) => {
           start++;
           let startHourValue = start.toString();
@@ -35,9 +36,8 @@ const timeSelection = props => {
           );
         })}
       </select>
-
-      <label> End Time</label>
-      <select name="endTime" value={endTime} onChange={props.handleChange}>
+      <h3> End Time</h3>
+      <select className="times" name="endTime" value={endTime} onChange={props.handleChange}>
         {endHours.map((hour, index) => {
           end++;
           let endHourValue = end.toString();

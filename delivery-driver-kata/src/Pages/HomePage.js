@@ -1,6 +1,7 @@
 import React from 'react';
 import Companies from '../Components/Companies/CompanyButtons';
 import Times from '../Components/Times/TimeSelection';
+import './HomePage.css';
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -40,16 +41,17 @@ class HomePage extends React.Component {
     const { selectedCompany, startTime, endTime } = this.state;
 
     return (
-      <div>
-        <h3>Choose a Company</h3>
-        <form>
-          <span>
-            <Companies selectedCompany={selectedCompany} handleChange={this.handleChange} />
-          </span>
-          <Times startTime={startTime} endTime={endTime} handleChange={this.handleChange} />
-        </form>
-        <div id="totalPay">
-          <h3> Your total Pay is: ${this.calculateTotal()}</h3>
+      <div className="homePage">
+        <div className="wrapper">
+          <h1>Delivery Driver Pay Rate Calculator</h1>
+          <h2 id="companyChoice">Choose a Company</h2>
+          <form>
+            <span>
+              <Companies selectedCompany={selectedCompany} handleChange={this.handleChange} />
+            </span>
+            <Times className="times" startTime={startTime} endTime={endTime} handleChange={this.handleChange} />
+          </form>
+          <h2 id="totalPay"> Your Total Pay Is: ${this.calculateTotal()}</h2>
         </div>
       </div>
     );
